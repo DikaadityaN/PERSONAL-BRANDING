@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perkenalan</title>
+    <style>
+        /* Reset default margin dan padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Body dan background */
+        body {
+            background: url('download.jpg') no-repeat center center fixed;
+            background-size: cover;
+            backdrop-filter: blur(5px);
+            color: white;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            animation: slideDown 1s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        /* Container utama */
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+            color: #f39c12;
+            border-bottom: 2px solid #f39c12;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+
+        p, ul {
+            font-size: 1rem;
+        }
+
+        ul {
+            list-style-type: square;
+            margin-left: 2rem;
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Animasi teks berjalan */
+        .marquee {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #f1c40f;
+            padding: 0.5rem 0;
+            font-weight: bold;
+        }
+
+        .marquee span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 10s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(-100%, 0);
+            }
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            margin-top: 2rem;
+            color: #f1c40f;
+        }
+
+        /* Animasi slideDown */
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Tombol interaktif */
+        .button {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            color: white;
+            background-color: #f39c12;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: #e67e22;
+        }
+    </style>
+</head>
+<body>
+    <div class="marquee">
+        <span>Selamat datang di website perkenalan saya! Mari kenali lebih dekat siapa saya 😊</span>
+    </div>
+
+    <header>
+        <h1>Halo, Selamat Datang!</h1>
+        <p>Kenali lebih dekat siapa saya 😊</p>
+    </header>
+
+    <div class="container">
+        <h2>Perkenalan</h2>
+        <p>Hai! Nama saya <b>Dika Aditya Nugraha</b>. Saya seorang <b>Siswa SMP Darul Falah 2 yang menduduki kelas 9</b>. Saya suka belajar hal baru dan menciptakan sesuatu yang bermanfaat.</p>
+
+        <h2>Hobi</h2>
+        <ul>
+            <li>Menulis kode dan membuat website</li>
+            <li>Membaca buku tentang teknologi dan sains</li>
+            <li>Bermain musik atau mendengarkan lagu favorit</li>
+            <li>Berolahraga seperti bersepeda atau renang</li>
+        </ul>
+
+        <h2>Proyek yang Sedang Dikerjakan</h2>
+        <p>Saat ini, saya sedang mengembangkan sebuah web sederhana untuk memperkenalkan diri saya, hobi saya, dan projek saya yang sedang kerjakan.</p>
+        <a href="#" class="button">Pelajari Lebih Lanjut</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Dika Aditya Nugraha. Dibuat dengan niat dan semangat belajar.</p>
+    </footer>
+</body>
+</html>
